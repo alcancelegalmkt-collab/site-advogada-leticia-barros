@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5B513VWB4D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5B513VWB4D');
+    </script>
+
+    <!-- Meta Pixel -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '858690737244687');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=858690737244687&ev=PageView&noscript=1"/></noscript>
+
+    <title>Blog Jurídico | Dra. Letícia Barros — Advocacia em Vitória-ES</title>
+    <meta name="description" content="Artigos sobre Direito Trabalhista, Previdenciário, de Família e do Consumidor. Dúvidas reais respondidas por uma advogada em Vitória-ES. OAB/ES 39.948.">
+    <meta name="keywords" content="blog advogada vitória es, direito trabalhista, gestante clt, pensão alimentícia, insalubridade, blog jurídico, advogada vitória">
+    <link rel="canonical" href="https://advogadaleticiabarros.com.br/blog/">
+
+    <meta property="og:title" content="Blog Jurídico | Dra. Letícia Barros">
+    <meta property="og:description" content="Artigos sobre seus direitos. Explicações claras, sem juridiquês, para quem precisa de orientação real.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://advogadaleticiabarros.com.br/blog/">
+    <meta property="og:image" content="../assets/logo/logo-800x800.png">
+
+    <link rel="icon" type="image/png" href="../assets/logo/logo-800x800.png">
+    <link rel="apple-touch-icon" href="../assets/logo/logo-800x800.png">
+    <meta name="apple-mobile-web-app-title" content="Letícia Barros">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/pages.css">
+
+    <!-- Schema.org — Blog -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Blog Jurídico — Dra. Letícia Barros",
+      "description": "Artigos sobre Direito Trabalhista, Previdenciário, de Família e do Consumidor.",
+      "url": "https://advogadaleticiabarros.com.br/blog/",
+      "publisher": {
+        "@type": "LegalService",
+        "name": "Dra. Letícia Barros — Advocacia e Consultoria Jurídica",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://advogadaleticiabarros.com.br/assets/logo/logo-800x800.png"
+        }
+      }
+    }
+    </script>
+
+    <style>
+        /* Blog-specific */
+        .category-filter {
+            display: flex; flex-wrap: wrap; justify-content: center;
+            gap: 12px; margin: 48px 0 60px;
+        }
+        .category-pill {
+            padding: 10px 22px; border-radius: 999px;
+            border: 1px solid rgba(201,169,98,0.3);
+            background: transparent; color: var(--texto-claro);
+            font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 500;
+            cursor: pointer; transition: all 0.3s ease;
+        }
+        .category-pill:hover, .category-pill.active {
+            background: var(--dourado); color: var(--fundo-escuro);
+            border-color: var(--dourado);
+        }
+        .blog-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+        }
+        .blog-card {
+            background: var(--fundo-alt);
+            border: 1px solid rgba(201,169,98,0.08);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+            display: flex; flex-direction: column;
+            text-decoration: none; color: inherit;
+        }
+        .blog-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(201,169,98,0.3);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .blog-card-image {
+            height: 200px;
+            background: linear-gradient(135deg, rgba(201,169,98,0.12), rgba(201,169,98,0.04));
+            display: flex; align-items: center; justify-content: center;
+            color: var(--dourado); font-size: 3rem;
+            border-bottom: 1px solid rgba(201,169,98,0.08);
+        }
+        .blog-card-body {
+            padding: 28px 24px; flex: 1;
+            display: flex; flex-direction: column;
+        }
+        .blog-card-cat {
+            display: inline-block;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem; font-weight: 600;
+            letter-spacing: 1.5px; text-transform: uppercase;
+            color: var(--dourado); margin-bottom: 14px;
+        }
+        .blog-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.35rem; line-height: 1.3;
+            margin-bottom: 14px; color: var(--texto-claro);
+        }
+        .blog-card p {
+            color: rgba(245,241,235,0.7);
+            font-size: 0.95rem; line-height: 1.6;
+            margin-bottom: 20px; flex: 1;
+        }
+        .blog-card-meta {
+            display: flex; justify-content: space-between;
+            font-size: 0.82rem; color: rgba(245,241,235,0.5);
+            padding-top: 16px;
+            border-top: 1px solid rgba(201,169,98,0.08);
+        }
+        .blog-card-meta .read-more {
+            color: var(--dourado); font-weight: 600;
+        }
+        @media (max-width: 1024px) {
+            .blog-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 640px) {
+            .blog-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header" id="header">
+    <div class="container">
+        <a href="../index.html" class="logo">
+            <img src="../assets/logo/logo-sem-fundo.png" alt="Letícia Barros" class="logo-img" onerror="this.style.display='none'">
+            <div class="logo-text">
+                <span class="name">Letícia Barros</span>
+                <span class="subtitle">Advocacia & Consultoria</span>
+            </div>
+        </a>
+        <nav>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../sobre.html">Sobre</a></li>
+                <li><a href="../escritorio.html">Escritório</a></li>
+                <li><a href="../escritorio.html">Escritório</a></li>
+                <li><a href="../index.html#areas">Áreas de Atuação</a></li>
+                <li><a href="index.html" class="active">Blog</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+                <li><a href="../contato.html">Contato</a></li>
+                <li><a href="../contato.html" class="nav-cta">Fale Comigo</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> &rsaquo; Blog
+        </div>
+        <h1>Blog <span class="highlight">Jurídico</span></h1>
+        <p>Dúvidas reais sobre seus direitos, respondidas sem juridiquês. Artigos novos toda semana sobre Direito Trabalhista, Previdenciário, de Família e do Consumidor — com foco em quem vive em Vitória-ES, Cariacica, Vila Velha e região.</p>
+    </div>
+</section>
+
+<div class="gold-line"></div>
+
+<!-- Blog List -->
+<section style="padding: 100px 0;">
+    <div class="container">
+
+        <div class="category-filter" role="tablist" aria-label="Filtrar por categoria">
+            <button class="category-pill active" data-cat="todos" role="tab" aria-selected="true">Todos</button>
+            <button class="category-pill" data-cat="trabalhista" role="tab" aria-selected="false">Trabalhista</button>
+            <button class="category-pill" data-cat="previdenciario" role="tab" aria-selected="false">Previdenciário</button>
+            <button class="category-pill" data-cat="familia" role="tab" aria-selected="false">Família</button>
+            <button class="category-pill" data-cat="consumidor" role="tab" aria-selected="false">Consumidor</button>
+        </div>
+
+        <div class="blog-grid" id="blogGrid">
+
+            <a href="fui-demitida-gravida-o-que-fazer.html" class="blog-card" data-cat="trabalhista">
+                <div class="blog-card-image"><i class="fa-solid fa-person-pregnant"></i></div>
+                <div class="blog-card-body">
+                    <span class="blog-card-cat">Trabalhista</span>
+                    <h3>Fui demitida grávida, tenho direito? O que fazer passo a passo</h3>
+                    <p>Gestante tem estabilidade da confirmação da gravidez até 5 meses após o parto. Entenda o que fazer se você foi demitida e como recuperar o emprego ou receber indenização.</p>
+                    <div class="blog-card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 7 min de leitura</span>
+                        <span class="read-more">Ler artigo <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="trabalhei-sem-registro-posso-processar.html" class="blog-card" data-cat="trabalhista">
+                <div class="blog-card-image"><i class="fa-solid fa-file-contract"></i></div>
+                <div class="blog-card-body">
+                    <span class="blog-card-cat">Trabalhista</span>
+                    <h3>Trabalhei sem registro em carteira, posso processar a empresa?</h3>
+                    <p>Trabalho sem carteira assinada é ilegal e gera direito a reconhecimento de vínculo, FGTS, férias, 13º e INSS. Veja como provar e os prazos para entrar com a ação.</p>
+                    <div class="blog-card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 6 min de leitura</span>
+                        <span class="read-more">Ler artigo <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="insalubridade-quem-tem-direito.html" class="blog-card" data-cat="trabalhista">
+                <div class="blog-card-image"><i class="fa-solid fa-helmet-safety"></i></div>
+                <div class="blog-card-body">
+                    <span class="blog-card-cat">Trabalhista</span>
+                    <h3>Insalubridade: quem tem direito ao adicional e como pedir?</h3>
+                    <p>Trabalha com produtos químicos, ruído, calor ou em contato com pacientes? Você pode ter direito a 10%, 20% ou 40% a mais no salário. Veja como funciona.</p>
+                    <div class="blog-card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 6 min de leitura</span>
+                        <span class="read-more">Ler artigo <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="empresa-pode-obrigar-limpar-banheiro.html" class="blog-card" data-cat="trabalhista">
+                <div class="blog-card-image"><i class="fa-solid fa-broom"></i></div>
+                <div class="blog-card-body">
+                    <span class="blog-card-cat">Trabalhista</span>
+                    <h3>Empresa pode obrigar funcionário a limpar banheiro?</h3>
+                    <p>Essa é uma das situações mais comuns que chegam ao meu escritório. Descubra o que diz a lei sobre desvio de função e assédio moral — e o que fazer se isso está acontecendo com você.</p>
+                    <div class="blog-card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 5 min de leitura</span>
+                        <span class="read-more">Ler artigo <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="pensao-alimenticia-como-funciona.html" class="blog-card" data-cat="familia">
+                <div class="blog-card-image"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                <div class="blog-card-body">
+                    <span class="blog-card-cat">Família</span>
+                    <h3>Pensão alimentícia: como funciona e quanto é devido?</h3>
+                    <p>Pensão é direito do filho, não punição. Veja como é calculada, quanto você pode cobrar, como processar na Justiça e o que fazer se o ex não paga.</p>
+                    <div class="blog-card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 7 min de leitura</span>
+                        <span class="read-more">Ler artigo <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="aposentadoria-hibrida-como-funciona.html" class="blog-card" data-cat="previdenciario">
+                <div class="blog-card-image"><i class="fa-solid fa-person-cane"></i></div>
+                <div class="blog-card-body">
+                    <span class="blog-card-cat">Previdenciário</span>
+                    <h3>Aposentadoria híbrida: como funciona e quem tem direito?</h3>
+                    <p>Combine tempo como CLT, autônomo e facultativo para se aposentar. Veja como calcular e como solicitar ao INSS em Vitória-ES.</p>
+                    <div class="blog-card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 7 min de leitura</span>
+                        <span class="read-more">Ler artigo <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="bpc-loas-como-funciona.html" class="blog-card" data-cat="previdenciario">
+                <div class="blog-card-image"><i class="fa-solid fa-heart-pulse"></i></div>
+                <div class="blog-card-body">
+                    <span class="blog-card-cat">Previdenciário</span>
+                    <h3>BPC/LOAS: como funciona e quem tem direito ao benefício?</h3>
+                    <p>Benefício de R$ 1.412 para idosos com 65+ anos e pessoas com deficiência. Veja critérios de renda, como solicitar e o que fazer se negar.</p>
+                    <div class="blog-card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 8 min de leitura</span>
+                        <span class="read-more">Ler artigo <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="compra-online-direitos-do-consumidor.html" class="blog-card" data-cat="consumidor">
+                <div class="blog-card-image"><i class="fa-solid fa-shopping-cart"></i></div>
+                <div class="blog-card-body">
+                    <span class="blog-card-cat">Consumidor</span>
+                    <h3>Compra online: quais são meus direitos como consumidor?</h3>
+                    <p>Arrependimento em 7 dias, devolução, produto com defeito — seus direitos em compras pela internet segundo o CDC.</p>
+                    <div class="blog-card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 6 min de leitura</span>
+                        <span class="read-more">Ler artigo <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="quanto-tempo-processar-apos-demissao.html" class="blog-card" data-cat="trabalhista">
+                <div class="blog-card-image"><i class="fa-solid fa-gavel"></i></div>
+                <div class="blog-card-body">
+                    <span class="blog-card-cat">Trabalhista</span>
+                    <h3>Quanto tempo tenho para processar após demissão?</h3>
+                    <p>Prazo de 2 anos para entrar com ação. Veja as principais causas de demissão injusta — discriminação, assédio, desvio de função.</p>
+                    <div class="blog-card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 8 min de leitura</span>
+                        <span class="read-more">Ler artigo <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <div id="blogEmpty" style="display:none; text-align:center; padding:60px 20px; color: rgba(245,241,235,0.6);">
+            <i class="fa-regular fa-folder-open" style="font-size:2.5rem; color:var(--dourado); margin-bottom:16px;"></i>
+            <p>Ainda não há artigos nesta categoria.<br>Novos posts toda semana — volte em breve.</p>
+        </div>
+
+    </div>
+</section>
+
+<div class="gold-line"></div>
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-box reveal">
+            <h2>Não encontrou a resposta<br><span class="highlight">que procurava?</span></h2>
+            <p>Seu caso é único. Fale comigo diretamente pelo WhatsApp para uma análise gratuita e personalizada.</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/5527995151402?text=Ol%C3%A1%20Dra.%20Let%C3%ADcia%2C%20li%20um%20artigo%20no%20blog%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida." class="btn-whatsapp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Tirar dúvida no WhatsApp</a>
+                <a href="../contato.html" class="btn-outline"><i class="fa-solid fa-envelope"></i> Ir para contato</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="gold-line"></div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="../index.html" class="logo">
+                    <img src="../assets/logo/logo-sem-fundo.png" alt="LB" class="logo-img" onerror="this.style.display='none'">
+                    <div class="logo-text">
+                        <span class="name">Letícia Barros</span>
+                        <span class="subtitle">Advocacia & Consultoria</span>
+                    </div>
+                </a>
+                <p>Advocacia humanizada com foco em resultados para quem mais precisa. Presencial em Vitória-ES e online em todo o Brasil.</p>
+                <div class="contact-social">
+                    <a href="https://www.instagram.com/adv.leticiabarros2/" class="social-btn" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/leticia-barros-996699158/" class="social-btn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="http://facebook.com/profile.php?id=61576777010109" class="social-btn" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                <li><a href="../sobre.html">Sobre</a></li>
+                <li><a href="../escritorio.html">Escritório</a></li>
+                    <li><a href="../index.html#areas">Áreas de Atuação</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Áreas</h4>
+                <ul class="footer-links">
+                    <li><a href="../areas/direito-trabalhista.html">Trabalhista</a></li>
+                    <li><a href="../areas/direito-previdenciario.html">Previdenciário</a></li>
+                    <li><a href="../areas/direito-familia.html">Família</a></li>
+                    <li><a href="../areas/direito-consumidor.html">Consumidor</a></li>
+                    <li><a href="../areas/direito-civil.html">Cível</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contato</h4>
+                <div class="ft-contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>R. José Alexandre Buaiz, 160<br>Enseada do Suá, Vitória - ES</span>
+                </div>
+                <div class="ft-contact-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>(27) 99515-1402</span>
+                </div>
+                <div class="ft-contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>advogadaleticia.barros@gmail.com</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Letícia Elias Barros — Advocacia e Consultoria Jurídica. Todos os direitos reservados.</p>
+            <p><a href="../politica-privacidade.html">Política de Privacidade</a> &nbsp;|&nbsp; <a href="../termos-de-uso.html">Termos de Uso</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/5527995151402?text=Ol%C3%A1%20Dra.%20Let%C3%ADcia%2C%20vim%20pelo%20blog%20e%20gostaria%20de%20saber%20mais." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- Back to Top -->
+<button class="back-top" id="backTop" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<script src="../js/pages.js"></script>
+<script>
+    // Category filter
+    const pills = document.querySelectorAll('.category-pill');
+    const cards = document.querySelectorAll('#blogGrid .blog-card');
+    const emptyState = document.getElementById('blogEmpty');
+    const grid = document.getElementById('blogGrid');
+
+    pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+            const cat = pill.dataset.cat;
+            pills.forEach(p => { p.classList.remove('active'); p.setAttribute('aria-selected','false'); });
+            pill.classList.add('active');
+            pill.setAttribute('aria-selected','true');
+
+            let shown = 0;
+            cards.forEach(card => {
+                const match = cat === 'todos' || card.dataset.cat === cat;
+                card.style.display = match ? '' : 'none';
+                if (match) shown++;
+            });
+            emptyState.style.display = shown === 0 ? 'block' : 'none';
+            grid.style.display = shown === 0 ? 'none' : '';
+        });
+    });
+</script>
+</body>
+</html>

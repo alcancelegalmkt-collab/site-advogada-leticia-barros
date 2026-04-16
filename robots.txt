@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://advogadaleticiabarros.com.br/sitemap.xml
