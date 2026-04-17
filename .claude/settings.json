@@ -10,7 +10,11 @@
       "Bash(sed -i 's|leticia-sorrindo\\\\.jpg|leticia-sentada-removebg-preview.png|g' lp/*.html)",
       "Bash(sed -i 's|sobre-leticia\\\\.jpg|leticia-estudiosa-removebg-preview.png|g' lp/gestante-clt.html)",
       "Bash(sed -i 's|sobre-leticia\\\\.jpg|leticia-seria-removebg-preview.png|g' lp/bpc-loas-criancas.html)",
-      "Bash(sed -i 's|sobre-leticia\\\\.jpg|leticia-sentada-removebg-preview.png|g' lp/insalubridade-clt.html)"
+      "Bash(sed -i 's|sobre-leticia\\\\.jpg|leticia-sentada-removebg-preview.png|g' lp/insalubridade-clt.html)",
+      "Bash(sed -i 's|<a href=\"#\">Política de Privacidade</a>|<a href=\"../politica-privacidade.html\">Política de Privacidade</a>|g' areas/*.html)",
+      "Bash(sed -i 's|<a href=\"#\">Termos de Uso</a>|<a href=\"../termos-de-uso.html\">Termos de Uso</a>|g' areas/*.html)",
+      "Bash(sed -i 's|<a href=\"#\">Política de Privacidade</a>|<a href=\"../politica-privacidade.html\">Política de Privacidade</a>|g' lp/*.html)",
+      "Bash(sed -i 's|<a href=\"#\">Termos de Uso</a>|<a href=\"../termos-de-uso.html\">Termos de Uso</a>|g' lp/*.html)"
     ]
   }
 }

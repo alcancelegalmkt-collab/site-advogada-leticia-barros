@@ -1,0 +1,270 @@
+/* =====================================================
+   MICRO-INTERAÇÕES POLIDAS
+   Letícia Barros | Advocacia e Consultoria Jurídica
+   ===================================================== */
+
+/* ========== CARD HOVER IMPROVEMENTS ========== */
+.value-card,
+.right-card,
+.check-item,
+.bio-card,
+.contact-info-card,
+.contact-form-wrapper,
+.faq-item,
+.card {
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.value-card:hover,
+.right-card:hover,
+.contact-info-card:hover,
+.card:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.check-item:hover {
+    transform: translateX(4px) scale(1.01);
+}
+
+/* ========== BUTTON RIPPLE EFFECT ========== */
+.btn-primary,
+.btn-whatsapp,
+.btn-outline,
+.social-btn,
+.header-cta,
+button {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Ripple effect on click */
+.btn-primary::after,
+.btn-whatsapp::after,
+.btn-outline::after,
+.social-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.btn-primary:active::after,
+.btn-whatsapp:active::after,
+.btn-outline:active::after,
+.social-btn:active::after {
+    animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+/* Additional button polish */
+.btn-primary:active,
+.btn-whatsapp:active,
+.btn-outline:active {
+    transform: translateY(-1px) scale(0.98);
+}
+
+/* ========== LINK UNDERLINE ANIMATION ========== */
+.nav-menu a,
+a:not(.logo):not(.btn-primary):not(.btn-whatsapp):not(.btn-outline):not(.social-btn) {
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: linear-gradient(90deg, var(--dourado), var(--dourado-light));
+    transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform-origin: left;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+.nav-menu a.active::after {
+    width: 100%;
+    height: 2px;
+}
+
+/* ========== ICON ANIMATIONS ========== */
+.value-icon,
+.right-icon,
+.contact-icon {
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.value-card:hover .value-icon,
+.right-card:hover .right-icon,
+.contact-item:hover .contact-icon {
+    transform: scale(1.1) rotate(5deg);
+    background: var(--dourado-glow-strong);
+}
+
+/* ========== SCROLL REVEAL ANIMATIONS ========== */
+.reveal {
+    opacity: 0;
+    animation: revealFadeIn 0.8s ease-out forwards;
+}
+
+.reveal:nth-child(1) { animation-delay: 0.1s; }
+.reveal:nth-child(2) { animation-delay: 0.2s; }
+.reveal:nth-child(3) { animation-delay: 0.3s; }
+.reveal:nth-child(4) { animation-delay: 0.4s; }
+.reveal:nth-child(5) { animation-delay: 0.5s; }
+.reveal:nth-child(6) { animation-delay: 0.6s; }
+
+.reveal-left {
+    opacity: 0;
+    animation: revealSlideInLeft 0.8s ease-out forwards;
+}
+
+.reveal-right {
+    opacity: 0;
+    animation: revealSlideInRight 0.8s ease-out forwards;
+}
+
+@keyframes revealFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes revealSlideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes revealSlideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ========== STAGGER ANIMATION ========== */
+.stagger {
+    display: grid;
+}
+
+.stagger > * {
+    opacity: 0;
+    animation: staggerFadeIn 0.6s ease-out forwards;
+}
+
+.stagger > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger > *:nth-child(5) { animation-delay: 0.5s; }
+.stagger > *:nth-child(6) { animation-delay: 0.6s; }
+.stagger > *:nth-child(7) { animation-delay: 0.7s; }
+.stagger > *:nth-child(8) { animation-delay: 0.8s; }
+.stagger > *:nth-child(9) { animation-delay: 0.9s; }
+
+@keyframes staggerFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========== FORM INPUT FOCUS ========== */
+input,
+textarea,
+select {
+    transition: all 0.25s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    transform: translateY(-2px);
+}
+
+/* ========== FAQ SMOOTH EXPAND ========== */
+.faq-answer {
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.faq-question {
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover .faq-question {
+    color: var(--dourado);
+}
+
+.faq-item.open {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ========== SMOOTH TRANSITIONS ========== */
+* {
+    --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-fast: all 0.15s ease;
+}
+
+/* ========== MOBILE OPTIMIZATIONS ========== */
+@media (max-width: 768px) {
+    .value-card:hover,
+    .right-card:hover,
+    .check-item:hover,
+    .contact-info-card:hover {
+        transform: translateY(-4px) scale(1.005);
+    }
+
+    .btn-primary:active,
+    .btn-whatsapp:active,
+    .btn-outline:active {
+        transform: translateY(0) scale(0.97);
+    }
+
+    .value-card:hover .value-icon,
+    .right-card:hover .right-icon,
+    .contact-item:hover .contact-icon {
+        transform: scale(1.05) rotate(0deg);
+    }
+}
