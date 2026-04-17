@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed -i 's|leticia-sorrindo\\\\.jpg|leticia-sentada-removebg-preview.png|g' areas/*.html)",
+      "Bash(sed -i 's|sobre-leticia\\\\.jpg|leticia-estudiosa-removebg-preview.png|g' areas/direito-trabalhista.html)",
+      "Bash(sed -i 's|sobre-leticia\\\\.jpg|leticia-seria-removebg-preview.png|g' areas/direito-previdenciario.html)",
+      "Bash(sed -i 's|sobre-leticia\\\\.jpg|leticia-sorrindo_2-removebg-preview.png|g' areas/direito-familia.html)",
+      "Bash(sed -i 's|sobre-leticia\\\\.jpg|leticia-estudiosa-removebg-preview.png|g' areas/direito-consumidor.html)",
+      "Bash(sed -i 's|leticia-seria\\\\.jpg|leticia-seria-removebg-preview.png|g' lp/*.html)",
+      "Bash(sed -i 's|leticia-sorrindo\\\\.jpg|leticia-sentada-removebg-preview.png|g' lp/*.html)",
+      "Bash(sed -i 's|sobre-leticia\\\\.jpg|leticia-estudiosa-removebg-preview.png|g' lp/gestante-clt.html)",
+      "Bash(sed -i 's|sobre-leticia\\\\.jpg|leticia-seria-removebg-preview.png|g' lp/bpc-loas-criancas.html)",
+      "Bash(sed -i 's|sobre-leticia\\\\.jpg|leticia-sentada-removebg-preview.png|g' lp/insalubridade-clt.html)"
+    ]
+  }
+}
