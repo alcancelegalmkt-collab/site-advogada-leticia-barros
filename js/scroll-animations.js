@@ -24,9 +24,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-    // Observar elementos com classe scroll-animate
-    document.querySelectorAll('.scroll-animate, .stat-number, [data-target]').forEach(el => {
+    // Seletores de elementos para animar automaticamente
+    const elementsToAnimate = [
+        '.scroll-animate',
+        '.stat-number',
+        '[data-target]',
+        '.value-card',
+        '.right-card',
+        '.check-item',
+        '.blog-card',
+        '.process-step',
+        '.faq-item',
+        '.section-header .reveal',
+        '.reveal-left',
+        '.reveal-right'
+    ];
+
+    // Observar todos os elementos
+    document.querySelectorAll(elementsToAnimate.join(', ')).forEach(el => {
         observer.observe(el);
+    });
+
+    // Animar também grids inteiras
+    document.querySelectorAll('.values-grid, .rights-grid, .checklist-grid, .blog-grid, .process-grid').forEach(grid => {
+        observer.observe(grid);
     });
 
     // Animar contadores numéricos
@@ -52,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Observador para hero stats (se tiverem números)
-    const heroStats = document.querySelectorAll('.hero-stat, .stat-value');
+    const heroStats = document.querySelectorAll('.hero-stat, .stat-value, .trust-text strong');
     heroStats.forEach(stat => {
         observer.observe(stat);
     });
