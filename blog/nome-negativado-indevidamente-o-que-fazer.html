@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu nome foi negativado indevidamente: o que fazer e como cobrar indenização — Blog Letícia Barros</title>
+  <meta name="description" content="Nome no Serasa sem dever? Veja o que a lei garante, como tirar a negativação e como cobrar indenização de até R$ 25 mil.">
+  <link rel="canonical" href="https://advogadaleticiabarros.com.br/blog/nome-negativado-indevidamente-o-que-fazer.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #1a3a5c;
+      --color-accent:  #c8a96e;
+      --color-cta:     #25D366;
+      --color-dark:    #1a1a2e;
+      --color-light:   #ffffff;
+      --color-bg:      #f8f6f0;
+      --color-text:    #2d2d2d;
+      --color-muted:   #6b7280;
+      --color-border:  #e5e0d8;
+
+      --font-title: 'Playfair Display', Georgia, serif;
+      --font-body:  'Inter', 'Open Sans', sans-serif;
+
+      --max-width-article: 760px;
+      --max-width-site: 1100px;
+      --radius: 10px;
+      --transition: 0.2s ease;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.75;
+      color: var(--color-text);
+      background: var(--color-bg);
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--color-primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ---- HEADER ---- */
+    .site-header {
+      background: var(--color-primary);
+      padding: 18px 24px;
+    }
+
+    .site-header__inner {
+      max-width: var(--max-width-site);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo { display: flex; align-items: center; text-decoration: none; }
+    .logo img { height: 40px; width: auto; max-width: none; }
+
+    .back-link {
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.72);
+      transition: color var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .back-link:hover { color: var(--color-light); text-decoration: none; }
+
+    /* ---- HERO DO ARTIGO ---- */
+    .article-hero {
+      background: var(--color-primary);
+      min-height: 440px;
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .article-hero__image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.28;
+    }
+
+    .article-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(26,58,92,0.85) 0%, rgba(26,58,92,0.3) 100%);
+    }
+
+    .article-hero__content {
+      position: relative;
+      z-index: 2;
+      max-width: var(--max-width-site);
+      margin: 0 auto;
+      padding: 64px 24px 52px;
+      width: 100%;
+    }
+
+    .article-hero__category {
+      display: inline-block;
+      background: var(--color-accent);
+      color: var(--color-dark);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 4px 14px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    .article-hero__title {
+      font-family: var(--font-title);
+      font-size: clamp(26px, 4vw, 48px);
+      line-height: 1.15;
+      color: var(--color-light);
+      max-width: 780px;
+      margin-bottom: 24px;
+      font-weight: 700;
+    }
+
+    .article-hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 18px;
+      color: rgba(255,255,255,0.68);
+      font-size: 13px;
+    }
+
+    /* ---- LAYOUT PRINCIPAL ---- */
+    .site-main {
+      max-width: var(--max-width-site);
+      margin: 0 auto;
+      padding: 52px 24px 80px;
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 48px;
+      align-items: start;
+    }
+
+    /* ---- ARTIGO ---- */
+    .article-body {
+      background: var(--color-light);
+      border-radius: var(--radius);
+      padding: 48px 52px;
+      box-shadow: 0 2px 16px rgba(26,58,92,0.07);
+    }
+
+    .article-body h2 {
+      font-family: var(--font-title);
+      font-weight: 700;
+      font-size: 22px;
+      color: var(--color-primary);
+      margin: 44px 0 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--color-accent);
+      line-height: 1.3;
+    }
+    .article-body h2:first-child { margin-top: 0; }
+
+    .article-body h3 {
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 18px;
+      color: var(--color-dark);
+      margin: 30px 0 12px;
+    }
+
+    .article-body p { margin-bottom: 20px; font-size: 17px; line-height: 1.85; color: var(--color-text); }
+
+    .article-body ul, .article-body ol { margin: 0 0 20px 22px; }
+    .article-body li { margin-bottom: 10px; font-size: 17px; line-height: 1.7; }
+    .article-body strong { font-weight: 700; color: var(--color-dark); }
+
+    .article-body blockquote {
+      border-left: 4px solid var(--color-accent);
+      background: #fdf8f0;
+      padding: 20px 24px;
+      margin: 30px 0;
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .article-body blockquote p { font-size: 17px; font-weight: 600; color: var(--color-dark); margin: 0; }
+
+    .callout {
+      background: #eef4fb;
+      border-left: 4px solid var(--color-primary);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 22px;
+      margin: 28px 0;
+    }
+    .callout__title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--color-primary); margin-bottom: 8px; }
+    .callout p { margin: 0; font-size: 15px; color: var(--color-text); }
+
+    .cta-inline {
+      background: var(--color-primary);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin: 36px 0;
+      text-align: center;
+    }
+    .cta-inline__title { font-family: var(--font-title); font-size: 22px; color: var(--color-light); margin-bottom: 10px; line-height: 1.25; }
+    .cta-inline__title span { color: var(--color-accent); }
+    .cta-inline p { font-size: 14px; color: rgba(255,255,255,0.78); margin-bottom: 20px; line-height: 1.55; }
+
+    .btn {
+      display: inline-block;
+      background: var(--color-cta);
+      color: var(--color-light);
+      font-weight: 700;
+      font-size: 15px;
+      padding: 13px 28px;
+      border-radius: var(--radius);
+      transition: background var(--transition), transform var(--transition);
+    }
+    .btn:hover { background: #1da851; transform: translateY(-1px); text-decoration: none; }
+
+    .article-image { margin: 28px 0; }
+    .article-image img { border-radius: var(--radius); width: 100%; }
+    .article-image figcaption { font-size: 13px; color: var(--color-muted); margin-top: 8px; text-align: center; font-style: italic; }
+
+    /* ---- SIDEBAR ---- */
+    .sidebar { position: sticky; top: 32px; display: flex; flex-direction: column; gap: 20px; }
+
+    .sidebar-cta {
+      background: var(--color-primary);
+      color: var(--color-light);
+      border-radius: var(--radius);
+      padding: 28px 22px;
+      text-align: center;
+    }
+    .sidebar-cta__title { font-family: var(--font-title); font-size: 20px; margin-bottom: 10px; line-height: 1.25; }
+    .sidebar-cta__title span { color: var(--color-accent); }
+    .sidebar-cta p { font-size: 13px; color: rgba(255,255,255,0.72); margin-bottom: 18px; line-height: 1.5; }
+
+    .sidebar-widget { background: var(--color-light); border-radius: var(--radius); padding: 22px 20px; box-shadow: 0 2px 10px rgba(26,58,92,0.06); }
+    .sidebar-widget__title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-primary); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--color-accent); }
+
+    .related-post { padding: 12px 0; border-bottom: 1px solid var(--color-border); }
+    .related-post:last-child { border-bottom: none; padding-bottom: 0; }
+    .related-post__tag { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--color-accent); margin-bottom: 4px; }
+    .related-post__title { font-size: 13px; font-weight: 600; line-height: 1.4; color: var(--color-dark); }
+    .related-post__title:hover { color: var(--color-primary); }
+
+    /* ---- FOOTER ---- */
+    .site-footer {
+      background: var(--color-primary);
+      color: var(--color-light);
+      text-align: center;
+      padding: 56px 24px 32px;
+    }
+    .site-footer__title { font-family: var(--font-title); font-size: clamp(22px, 4vw, 36px); margin-bottom: 14px; line-height: 1.2; }
+    .site-footer__title span { color: var(--color-accent); }
+    .site-footer__sub { font-size: 15px; color: rgba(255,255,255,0.72); max-width: 440px; margin: 0 auto 28px; line-height: 1.6; }
+    .site-footer__copy { margin-top: 40px; font-size: 12px; color: rgba(255,255,255,0.35); }
+
+    /* ---- RESPONSIVO ---- */
+    @media (max-width: 900px) {
+      .site-main { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+    }
+    @media (max-width: 640px) {
+      .article-body { padding: 28px 20px; }
+      .article-hero__content { padding: 44px 20px 36px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="logo">
+        <img src="../assets/logo/logo-sem-fundo.png" alt="Letícia Barros Advocacia & Consultoria" height="40">
+      </a>
+      <a href="index.html" class="back-link">← Todos os artigos</a>
+    </div>
+  </header>
+
+  <!-- HERO DO ARTIGO -->
+  <section class="article-hero">
+    <img class="article-hero__image" src="https://images.unsplash.com/photo-1527236438218-d82077ae1f85?w=1200&q=80" alt="Mulher preocupada ao descobrir nome negativado indevidamente no Serasa">
+    <div class="article-hero__content">
+      <span class="article-hero__category">Consumidor</span>
+      <h1 class="article-hero__title">
+        Meu nome foi negativado indevidamente: o que fazer e como cobrar indenização
+      </h1>
+      <div class="article-hero__meta">
+        <span>📅 22 de junho de 2026</span>
+        <span>⏱ 8 min de leitura</span>
+        <span>✍️ Dra. Leticia Barros | OAB/ES</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="site-main">
+
+    <!-- ARTIGO -->
+    <article class="article-body">
+
+      <p><strong>Você foi ao banco, tentou fazer uma compra parcelada — ou simplesmente recebeu uma mensagem — e descobriu: seu nome está no Serasa. Só que você não deve nada.</strong></p>
+
+      <p>A sensação é uma mistura de susto, raiva e impotência. Você sabe que não deve, mas e agora? Como prova isso? Quanto tempo vai levar para resolver? Vai ter alguma consequência?</p>
+
+      <p>Respira. Isso acontece com muito mais gente do que você imagina — e a lei está do seu lado. Neste artigo, vou te explicar o que é negativação indevida, quando você tem direito à indenização (e sim, pode chegar a R$ 25 mil), e o que fazer passo a passo para resolver isso o mais rápido possível.</p>
+
+      <p>Se meu nome foi negativado indevidamente, o que faço? Você vai saber tudo até o final deste texto.</p>
+
+      <h2>O que é negativação indevida? (quando a lei te protege)</h2>
+
+      <p>Negativação indevida é quando seu nome vai parar no Serasa, SPC ou outro bureau de crédito sem um motivo legítimo. Parece óbvio, mas a lei é muito clara sobre quando isso acontece.</p>
+
+      <p>Você está protegido quando:</p>
+
+      <ul>
+        <li><strong>A dívida não existe</strong> — foi um erro do sistema, fraude ou engano</li>
+        <li><strong>Você já pagou</strong> mas a empresa não deu baixa</li>
+        <li><strong>A dívida está prescrita</strong> — passou do prazo legal para cobrança (5 anos para dívidas de consumo)</li>
+        <li><strong>O valor é maior do que o real</strong> — negativaram por um valor diferente do que você devia</li>
+        <li><strong>Você não foi notificado</strong> antes da negativação (a empresa tem obrigação de avisar)</li>
+        <li><strong>A dívida está sendo contestada na Justiça</strong> — enquanto corre o processo, não pode negativar</li>
+      </ul>
+
+      <p>Em qualquer um desses casos, a negativação é indevida — e você tem direito a agir.</p>
+
+      <h2>Você tem direito à indenização — e não precisa provar que sofreu</h2>
+
+      <p>Aqui é onde muita gente se surpreende: você <strong>não precisa provar que ficou triste, envergonhada ou que passou por dificuldades</strong> por causa da negativação indevida.</p>
+
+      <p>O Superior Tribunal de Justiça já decidiu isso na Súmula 385: a negativação indevida gera <strong>dano moral presumido</strong> (chamado de <em>dano moral in re ipsa</em>). Isso significa que o simples fato de ter acontecido já garante o direito à indenização.</p>
+
+      <p>Você só precisa provar duas coisas:</p>
+      <ol>
+        <li>Que a negativação existiu</li>
+        <li>Que ela foi indevida (dívida paga, não existente, prescrita, etc.)</li>
+      </ol>
+
+      <blockquote>
+        <p>"Negativação indevida gera dano moral presumido — você não precisa provar que sofreu, só provar que aconteceu." — STJ, Súmula 385</p>
+      </blockquote>
+
+      <p><strong>Quanto vale essa indenização?</strong></p>
+      <p>Os valores costumam variar entre <strong>R$ 3.000 e R$ 25.000</strong>, dependendo de:</p>
+      <ul>
+        <li>Quanto tempo seu nome ficou negativado</li>
+        <li>Se você sofreu alguma consequência direta (crédito negado, demissão, constrangimento público)</li>
+        <li>Se há mais de uma negativação indevida ao mesmo tempo</li>
+        <li>Qual é o porte da empresa que te negativou</li>
+      </ul>
+
+      <div class="callout">
+        <div class="callout__title">📋 Caso típico do escritório</div>
+        <p>Uma cliente chegou até mim após ter o nome negativado por uma operadora de telefonia, mesmo tendo cancelado o contrato 8 meses antes. O nome ficou no Serasa por quase um ano. Ela tentou fazer um financiamento de carro e foi barrada. Conseguimos a exclusão imediata da negativação e uma indenização por danos morais.</p>
+      </div>
+
+      <h2>O que fazer passo a passo se seu nome foi negativado indevidamente</h2>
+
+      <p>Não entre em pânico. Siga esse roteiro:</p>
+
+      <h3>1. Tire um print da negativação (isso é a sua prova)</h3>
+      <p>Acesse o Serasa, Boa Vista ou SPC e tire um print da tela com: nome da empresa que te negativou, valor da dívida indicada e data da negativação. Esse print é a sua prova documental. Guarde bem.</p>
+
+      <h3>2. Identifique de onde veio essa negativação</h3>
+      <p>Muitas vezes a pessoa nem sabe de qual empresa ou dívida se trata. Verifique no próprio Serasa — o sistema mostra o credor.</p>
+
+      <h3>3. Reúna documentos que comprovem que você não deve</h3>
+      <p>Dependendo da situação:</p>
+      <ul>
+        <li><strong>Dívida já paga:</strong> comprovante de pagamento, recibo, extrato bancário</li>
+        <li><strong>Dívida que não existe:</strong> documentos que mostram que você nunca teve esse contrato</li>
+        <li><strong>Dívida prescrita:</strong> a data da negativação e da dívida já bastam para calcular</li>
+      </ul>
+
+      <figure class="article-image">
+        <img src="https://images.unsplash.com/photo-1638274749450-30c893afe3d1?w=800&q=80" alt="Mulher verificando documentos e anotações sobre dívida indevida no Serasa">
+        <figcaption>Documentar a negativação é o primeiro passo para garantir seus direitos.</figcaption>
+      </figure>
+
+      <h3>4. Notifique a empresa por escrito</h3>
+      <p>Envie um e-mail ou carta para o SAC da empresa informando que a negativação é indevida e exigindo a retirada imediata. Guarde o protocolo ou o e-mail enviado.</p>
+
+      <div class="callout">
+        <div class="callout__title">💡 Por que isso é importante?</div>
+        <p>A empresa tem <strong>5 dias úteis</strong> após o pagamento (ou notificação de erro) para baixar o nome. Se não baixar no prazo, isso pode virar mais indenização — além da original.</p>
+      </div>
+
+      <h3>5. Se não resolver — procure uma advogada</h3>
+      <p>Se a empresa ignorar, demorar ou se recusar a retirar a negativação, é hora de agir judicialmente. O processo pode ser feito nos <strong>Juizados Especiais Cíveis</strong> (o popular "pequenas causas") — sem precisar pagar nada para entrar, dependendo do valor.</p>
+
+      <div class="cta-inline">
+        <div class="cta-inline__title">Seu nome foi negativado <span>sem motivo</span>?</div>
+        <p>Fale comigo agora. Vamos analisar seu caso juntas e ver o que é possível fazer. O primeiro contato é sem compromisso.</p>
+        <a href="https://wa.me/5527995151402?text=Ol%C3%A1%2C%20meu%20nome%20foi%20negativado%20indevidamente%20e%20quero%20entender%20meus%20direitos." class="btn">💬 Falar no WhatsApp</a>
+      </div>
+
+      <h2>A empresa tem prazo para tirar seu nome — e se não tirar, é mais indenização</h2>
+
+      <p>A Súmula 548 do STJ é direta: a empresa tem <strong>5 dias úteis</strong> após o pagamento da dívida (ou após ser notificada do erro) para dar baixa na negativação.</p>
+
+      <p>Se descumprir esse prazo, ela não só tem que retirar — como pode ser condenada a pagar uma indenização adicional pelo atraso.</p>
+
+      <p><strong>Como documentar esse descumprimento:</strong></p>
+      <ul>
+        <li>Guarde o protocolo de atendimento ou e-mail com a data em que você notificou</li>
+        <li>Tire prints do Serasa nos dias seguintes para mostrar que o nome ainda estava negativado após os 5 dias úteis</li>
+        <li>Esses prints são prova para o processo</li>
+      </ul>
+
+      <h2>Dívida prescrita: podem me negativar mesmo assim?</h2>
+
+      <p>Não. E esse é um erro que empresas cometem com frequência.</p>
+
+      <p><strong>Prescrição</strong> é o prazo legal que a empresa tem para cobrar uma dívida na Justiça. Para dívidas de consumo (cartão de crédito, financiamentos, contratos de serviço), esse prazo é de <strong>5 anos</strong>, contado a partir da data do vencimento.</p>
+
+      <p>Após 5 anos, a dívida não desaparece — você ainda tecnicamente "deve" — mas a empresa <strong>perde o direito de cobrar judicialmente</strong> e também perde o direito de negativar seu nome.</p>
+
+      <p>Se uma empresa te negativou por uma dívida prescrita, isso é negativação indevida e gera direito à indenização da mesma forma.</p>
+
+      <h2>Perguntas frequentes</h2>
+
+      <h3>Posso resolver isso sem advogada?</h3>
+      <p>Você pode tentar resolver diretamente com a empresa — especialmente se for um erro óbvio e a empresa for receptiva. Mas se o problema persistir, ou se quiser cobrar indenização por danos morais, precisará de representação jurídica.</p>
+
+      <h3>Quanto tempo demora o processo?</h3>
+      <p>Nos Juizados Especiais, processos simples como esses costumam durar de 3 a 12 meses, dependendo da comarca e da complexidade do caso.</p>
+
+      <h3>E se tiver mais de uma negativação indevida ao mesmo tempo?</h3>
+      <p>O valor da indenização pode ser maior. Cada negativação indevida pode gerar um processo separado — ou todos podem ser reunidos em uma única ação, dependendo da estratégia.</p>
+
+      <h3>O banco pode negar meu crédito por conta da negativação indevida?</h3>
+      <p>Sim, e isso pode aumentar o valor da indenização. Se você conseguir comprovar que teve crédito negado, financiamento barrado ou alguma outra consequência direta da negativação indevida, guarde todos os registros.</p>
+
+      <h2>Seu nome foi negativado sem motivo? A lei está do seu lado</h2>
+
+      <p>Se você chegou até aqui é porque está passando por isso — e sabe que é injusto.</p>
+
+      <p>A negativação indevida é um dos direitos mais claros do Código de Defesa do Consumidor. A lei não apenas garante a retirada do nome: ela garante reparação pelo transtorno causado.</p>
+
+      <p>Você não precisa aceitar isso em silêncio.</p>
+
+      <div class="cta-inline" style="margin-top: 16px;">
+        <div class="cta-inline__title">Fale com a <span>Dra. Leticia Barros</span></div>
+        <p>Primeiro contato sem compromisso. Vamos analisar seu caso juntas e entender o que a lei garante pra você.</p>
+        <a href="https://wa.me/5527995151402?text=Ol%C3%A1%2C%20meu%20nome%20foi%20negativado%20indevidamente%20e%20quero%20entender%20meus%20direitos." class="btn">💬 Falar no WhatsApp agora</a>
+      </div>
+
+      <p style="margin-top: 32px;"><strong>Leia também:</strong></p>
+      <ul>
+        <li><a href="compra-online-direitos-do-consumidor.html">Comprei pela internet e o produto chegou errado — o que fazer?</a></li>
+        <li><a href="quanto-tempo-processar-apos-demissao.html">Quanto tempo tenho para entrar com processo após a demissão?</a></li>
+      </ul>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="sidebar-cta">
+        <div class="sidebar-cta__title">Letícia Barros <span>Advocacia</span></div>
+        <p>Advocacia humanizada para quem mais precisa. Vitória-ES e Brasil online.</p>
+        <a href="https://wa.me/5527995151402" class="btn">💬 Falar no WhatsApp</a>
+      </div>
+
+      <div class="sidebar-widget">
+        <div class="sidebar-widget__title">Mais artigos</div>
+
+        <div class="related-post">
+          <div class="related-post__tag">Trabalhista</div>
+          <a href="fui-demitida-gravida-o-que-fazer.html" class="related-post__title">Fui demitida grávida — tenho direito? O que fazer passo a passo</a>
+        </div>
+
+        <div class="related-post">
+          <div class="related-post__tag">Consumidor</div>
+          <a href="compra-online-direitos-do-consumidor.html" class="related-post__title">Comprei pela internet e o produto chegou errado — o que fazer?</a>
+        </div>
+
+        <div class="related-post">
+          <div class="related-post__tag">Trabalhista</div>
+          <a href="trabalhei-sem-registro-posso-processar.html" class="related-post__title">Trabalhei sem registro por anos — posso receber o que perdi?</a>
+        </div>
+
+        <div class="related-post">
+          <div class="related-post__tag">Família</div>
+          <a href="pensao-alimenticia-como-funciona.html" class="related-post__title">Como funciona a pensão alimentícia quando o pai some?</a>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="site-footer__title">
+      Seus direitos merecem <span>uma advogada que luta</span>
+    </div>
+    <p class="site-footer__sub">
+      Advocacia humanizada para trabalhadores, famílias e consumidores. Vitória-ES e todo o Brasil online.
+    </p>
+    <a href="https://wa.me/5527995151402" class="btn" style="font-size: 15px; padding: 14px 34px;">💬 Fale com a Dra. Leticia</a>
+    <div class="site-footer__copy">
+      © 2026 Letícia Barros Advocacia & Consultoria — Todos os direitos reservados
+    </div>
+  </footer>
+
+</body>
+</html>
