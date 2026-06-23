@@ -104,10 +104,18 @@
         }
         .blog-card-image {
             height: 200px;
-            background: linear-gradient(135deg, rgba(201,169,98,0.12), rgba(201,169,98,0.04));
-            display: flex; align-items: center; justify-content: center;
-            color: var(--dourado); font-size: 3rem;
+            overflow: hidden;
             border-bottom: 1px solid rgba(201,169,98,0.08);
+            background: linear-gradient(135deg, rgba(201,169,98,0.12), rgba(201,169,98,0.04));
+        }
+        .blog-card-image img {
+            width: 100%; height: 100%;
+            object-fit: cover; object-position: center top;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        .blog-card:hover .blog-card-image img {
+            transform: scale(1.05);
         }
         .blog-card-body {
             padding: 28px 24px; flex: 1;
@@ -206,7 +214,7 @@
         <div class="blog-grid" id="blogGrid">
 
             <a href="carga-horaria-maxima-clt.html" class="blog-card" data-cat="trabalhista">
-                <div class="blog-card-image"><i class="fa-solid fa-clock"></i></div>
+                <div class="blog-card-image"><img src="https://images.unsplash.com/photo-1758520145147-c30bc656f314?w=600&q=80" alt="Relógio marcando hora extra — carga horária máxima CLT" loading="lazy"></div>
                 <div class="blog-card-body">
                     <span class="blog-card-cat">Trabalhista</span>
                     <h3>Carga horária máxima CLT: quantas horas posso ser obrigado a trabalhar?</h3>
@@ -219,7 +227,7 @@
             </a>
 
             <a href="fui-demitida-gravida-o-que-fazer.html" class="blog-card" data-cat="trabalhista">
-                <div class="blog-card-image"><i class="fa-solid fa-person-pregnant"></i></div>
+                <div class="blog-card-image"><img src="https://images.unsplash.com/photo-1710897869539-a48e3d69a8d7?w=600&q=80" alt="Mulher negra grávida no trabalho — direitos da gestante CLT" loading="lazy"></div>
                 <div class="blog-card-body">
                     <span class="blog-card-cat">Trabalhista</span>
                     <h3>Fui demitida grávida, tenho direito? O que fazer passo a passo</h3>
@@ -232,7 +240,7 @@
             </a>
 
             <a href="trabalhei-sem-registro-posso-processar.html" class="blog-card" data-cat="trabalhista">
-                <div class="blog-card-image"><i class="fa-solid fa-file-contract"></i></div>
+                <div class="blog-card-image"><img src="https://images.unsplash.com/photo-1616010650868-e8c1583f6b0d?w=600&q=80" alt="Trabalhador sem carteira assinada — direitos trabalhistas" loading="lazy"></div>
                 <div class="blog-card-body">
                     <span class="blog-card-cat">Trabalhista</span>
                     <h3>Trabalhei sem registro em carteira, posso processar a empresa?</h3>
@@ -245,7 +253,7 @@
             </a>
 
             <a href="insalubridade-quem-tem-direito.html" class="blog-card" data-cat="trabalhista">
-                <div class="blog-card-image"><i class="fa-solid fa-helmet-safety"></i></div>
+                <div class="blog-card-image"><img src="https://images.unsplash.com/photo-1551880212-04f04559dd89?w=600&q=80" alt="Trabalhador com equipamento de segurança — insalubridade adicional" loading="lazy"></div>
                 <div class="blog-card-body">
                     <span class="blog-card-cat">Trabalhista</span>
                     <h3>Insalubridade: quem tem direito ao adicional e como pedir?</h3>
@@ -258,7 +266,7 @@
             </a>
 
             <a href="empresa-pode-obrigar-limpar-banheiro.html" class="blog-card" data-cat="trabalhista">
-                <div class="blog-card-image"><i class="fa-solid fa-broom"></i></div>
+                <div class="blog-card-image"><img src="https://images.unsplash.com/photo-1573164573938-c9a3db2e84ff?w=600&q=80" alt="Trabalhadora negra em serviço de limpeza — desvio de função assédio" loading="lazy"></div>
                 <div class="blog-card-body">
                     <span class="blog-card-cat">Trabalhista</span>
                     <h3>Empresa pode obrigar funcionário a limpar banheiro?</h3>
@@ -271,7 +279,7 @@
             </a>
 
             <a href="pensao-alimenticia-como-funciona.html" class="blog-card" data-cat="familia">
-                <div class="blog-card-image"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                <div class="blog-card-image"><img src="https://images.unsplash.com/photo-1641736047654-48c2546fcf19?w=600&q=80" alt="Família latina mãe e filho — pensão alimentícia direito de família" loading="lazy"></div>
                 <div class="blog-card-body">
                     <span class="blog-card-cat">Família</span>
                     <h3>Pensão alimentícia: como funciona e quanto é devido?</h3>
@@ -284,7 +292,7 @@
             </a>
 
             <a href="aposentadoria-hibrida-como-funciona.html" class="blog-card" data-cat="previdenciario">
-                <div class="blog-card-image"><i class="fa-solid fa-person-cane"></i></div>
+                <div class="blog-card-image"><img src="https://images.unsplash.com/photo-1542622475-904e18612fa1?w=600&q=80" alt="Pessoa idosa negra — aposentadoria híbrida INSS" loading="lazy"></div>
                 <div class="blog-card-body">
                     <span class="blog-card-cat">Previdenciário</span>
                     <h3>Aposentadoria híbrida: como funciona e quem tem direito?</h3>
@@ -297,7 +305,7 @@
             </a>
 
             <a href="bpc-loas-como-funciona.html" class="blog-card" data-cat="previdenciario">
-                <div class="blog-card-image"><i class="fa-solid fa-heart-pulse"></i></div>
+                <div class="blog-card-image"><img src="https://images.unsplash.com/photo-1540778339538-067eae485e9f?w=600&q=80" alt="Pessoa idosa recebendo benefício — BPC LOAS INSS" loading="lazy"></div>
                 <div class="blog-card-body">
                     <span class="blog-card-cat">Previdenciário</span>
                     <h3>BPC/LOAS: como funciona e quem tem direito ao benefício?</h3>
@@ -310,7 +318,7 @@
             </a>
 
             <a href="compra-online-direitos-do-consumidor.html" class="blog-card" data-cat="consumidor">
-                <div class="blog-card-image"><i class="fa-solid fa-shopping-cart"></i></div>
+                <div class="blog-card-image"><img src="https://images.unsplash.com/photo-1758526213756-9aecbea6bcfc?w=600&q=80" alt="Mulher negra preocupada com compra online — direitos do consumidor" loading="lazy"></div>
                 <div class="blog-card-body">
                     <span class="blog-card-cat">Consumidor</span>
                     <h3>Compra online: quais são meus direitos como consumidor?</h3>
@@ -323,7 +331,7 @@
             </a>
 
             <a href="nome-negativado-indevidamente-o-que-fazer.html" class="blog-card" data-cat="consumidor">
-                <div class="blog-card-image"><i class="fa-solid fa-ban"></i></div>
+                <div class="blog-card-image"><img src="https://images.unsplash.com/photo-1758876202400-64edbefc2256?w=600&q=80" alt="Mulher negra preocupada com negativação indevida no Serasa" loading="lazy"></div>
                 <div class="blog-card-body">
                     <span class="blog-card-cat">Consumidor</span>
                     <h3>Meu nome foi negativado indevidamente: o que fazer e como cobrar indenização</h3>
@@ -336,7 +344,7 @@
             </a>
 
             <a href="quanto-tempo-processar-apos-demissao.html" class="blog-card" data-cat="trabalhista">
-                <div class="blog-card-image"><i class="fa-solid fa-gavel"></i></div>
+                <div class="blog-card-image"><img src="https://images.unsplash.com/photo-1558227691-41ea78d1f631?w=600&q=80" alt="Documentos trabalhistas — prazo para processar após demissão" loading="lazy"></div>
                 <div class="blog-card-body">
                     <span class="blog-card-cat">Trabalhista</span>
                     <h3>Quanto tempo tenho para processar após demissão?</h3>
